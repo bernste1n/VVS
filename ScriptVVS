@@ -23,6 +23,8 @@ function main()
     if not isSampAvailable() or not isSampfuncsLoaded() then return end
     while not isSampAvailable() do wait(100) end
     
+    sampRegisterChatCommand(vvsinfo, vvsinfo)
+    
     downloadUrlToFile(update_url, update_path, function(id, status)
         if status == dlstatus.STATUS_ENDDOWNLOADDATA then
             updateIni = inicfg.load(nil, update_path)
@@ -33,8 +35,6 @@ function main()
             os.remove(update_path)
         end
     end
-    
-    sampRegisterChatCommand(vvsinfo,vvsinfo)
     
     
     
