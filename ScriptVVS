@@ -34,6 +34,11 @@ function main()
         end
     end
     
+    sampRegisterChatCommand(vvsinfo,vvsinfo)
+    
+    
+    
+    
     while true do 
         wait(0) 
     if update_state then
@@ -46,4 +51,8 @@ function main()
         break
     end
 
+end
+
+function vvsinfo()
+    sampAddChatMessage('Обновление установлено!', -1)
 end
