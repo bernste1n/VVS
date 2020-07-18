@@ -34,7 +34,7 @@ function main()
             end
             os.remove(update_path)
         end
-    end
+    end)
     
     
     
