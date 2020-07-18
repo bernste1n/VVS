@@ -50,7 +50,7 @@ function main()
         end)
         break
     end
-
+end
 end
 
 function vvsinfo()
